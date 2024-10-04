@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+a {
+    color: inherit;
+}
+body {
+  background-image: url("Hero-Image-1.webp");
+  background-size: cover;
+}
+
+#container1 {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 28vh;
+}
+
+#logophoto {
+    background-image: url("lazeezEats.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 15vw;
+}
+
+#Header1 {
+    margin: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50vw;
+}
+
+.firstHeader {
+    color: white;
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-weight: bolder; */
+}
+
+#Header2 {
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+}
+.firstHeadercontent:hover {
+    border-bottom: 5px solid red;
+}
+#part1 {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    justify-content: space-evenly;
+}
+
+.header2icon {
+    width: 10vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: White;
+    background-color: black;
+    transition: background-color 0.3s ease;
+
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    
+}
+
+.header2icon:hover {
+    background-color: red;
+} 

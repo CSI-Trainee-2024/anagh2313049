@@ -1,6 +1,9 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -8,80 +11,126 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    color: #333;
 }
+a {
+    color: inherit;
+}
+#container1 {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 28vh;
+}
+
+#logophoto {
+    /* background-image: url("lazeezEats.jpg"); */
+    /* background-size: cover;
+    background-position: center; */
+    height: 100%;
+    width: 15vw;
+}
+
+#Header1 {
+    margin: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50vw;
+}
+
+.firstHeader {
+    color: white;
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-weight: bolder; */
+}
+
+#Header2 {
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+}
+
+
+.firstHeadercontent:hover {
+    border-bottom: 5px solid red;
+}
+
+#part1 {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    justify-content: space-evenly;
+}
+
+.header2icon {
+    width: 10vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: White;
+    background-color: black;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.header2icon:hover {
+    background-color: red;
+} 
 
 .container {
     position: relative;
 }
 
-.container .wrapper {
+.wrapper {
     width: 60vw;
     height: 75vh;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
     margin: 5rem auto;
 }
 
-.container .wrapper-holder {
+.wrapper-holder {
     display: grid;
     grid-template-columns: repeat(4, 100%);
     height: 100%;
-    gap: 20px;
+    gap: 25px;
     width: 100%;
     animation: slider 30s ease-in-out infinite alternate;
 }
 
-.container .menu {
+.menu {
     display: flex;
     flex-direction: column; 
     align-items: center; 
     justify-content: center; 
+    flex-wrap: wrap;
     font-size: 2rem; 
-    color: white; 
-    background-color: rgba(0, 0, 128, 0.8); 
+    color: black; 
+    background-color: rgba(255, 255, 255, 0.8);
     border: 3px solid #ffffff; 
     border-radius: 10px; 
     height: 100%; 
     padding: 20px; 
+    width: 70%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+    transition: transform 0.3s ease; 
 }
 
-.container .menu h2 {
-    margin-bottom: 1rem; 
-}
-.container .menu ul {
-    list-style-type: none; 
-    padding: 0; 
+.container .menu:hover {
+    transform: scale(1.2); 
 }
 
-.container .menu li {
-    margin: 0.5rem 0; 
-    font-size: 1.2rem; 
-}
-
-.container .button-holder .button {
-    background-color: white;
-    width: 15px;
-    height: 15px;
-    border-radius: 15px;
-    display: inline-block;
-    margin: 0.3rem;
-}
-
-.container .button-holder {
-    position: absolute;
-    left: 45%;
-    bottom: 0%;
-}
-
-.button:hover {
-    box-shadow: 0px 0px 7px 4px rgba(0, 255, 255, 0.6);
-}
 
 .wrapper-holder:hover {
     animation-play-state: paused;
 }
 
-@keyframes slider {
+@keyframes slider 
+{
     0% { transform: translateX(0%); }
     10% { transform: translateX(-100%); }
     20% { transform: translateX(-100%); }
@@ -93,4 +142,39 @@ body {
     80% { transform: translateX(-300%); }
     90% { transform: translateX(0%); }
     100% { transform: translateX(0%); }
+}
+
+.table-container {
+    max-height: 300px;  
+    overflow-y: auto;
+    margin-top: 20px;
+    width: 100%;
+    border: 2px solid BLACK; 
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    background-color: rgba(255, 255, 255, 0.1); 
+    color: BLACK;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+th {
+    background-color: #C5BE77;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+tr:hover {
+    background-color: rgba(83, 70, 70, 0.2);
 }

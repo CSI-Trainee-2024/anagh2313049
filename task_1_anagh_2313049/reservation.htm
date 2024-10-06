@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reservation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <header>
+        <div id="container1">
+            <div id="logophoto"><img src="lazeezEats.jpg" alt="logophoto" height="100%"></div>
+            <div id="Header1">
+                <div id="menu" class="firstHeader"><a href="index.htm" class="firstHeadercontent border">HOME</a></div>
+                <div id="offers" class="firstHeader"><a href="#" class="firstHeadercontent border">OFFERS</a></div>
+                <div id="services" class="firstHeader"><a href="#" class="firstHeadercontent border">SERVICES</a></div>
+                <div id="ourStory" class="firstHeader"><a href="Our_story.htm" class="firstHeadercontent border">OUR STORY</a></div>
+            </div>
+            <div id="Header2">
+                <div id="part1">
+                    <div id="bookTable" class="header2icon"><i class="fa-solid fa-bag-shopping"></i>Book a Table</div>
+                    <div id="OrderOnline" class="header2icon"><i class="fa-solid fa-cart-shopping"></i>Order Online</div>
+                    <div id="ContactUs" class="header2icon"><i class="fa-solid fa-phone"></i>Contact Us</div>
+                </div>
+                <div id="emptyPart"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="maincontainer">
+            <div id="form">
+                <form action="#" method="post" class="reservation-form">
+                    <h2>Request Details</h2>
+                    <i class="fa-regular fa-calendar" style="color: #000000;"></i>
+                    <label for="date">date* </label>
+                    <input type="date" id="date" name="date"  required>
+
+                    <p><i class="fa-solid fa-user-group" style="color: #000000;"></i> 2 guests</p>
+                    <label for="start-time">Reservation Time Between:*</label>
+                    
+                    <select id="start-time" name="start-time" required>
+                        <option value="" disabled selected>Choose Start Time</option>
+                        <option value="0">00:00 a.m.</option>
+                        <option value="1">01:00 a.m.</option>
+                        <option value="2">02:00 a.m.</option>
+                        <option value="3">03:00 a.m.</option>
+                        <option value="4">04:00 a.m.</option>
+                        <option value="5">05:00 a.m.</option>
+                        <option value="6">06:00 a.m.</option>
+                        <option value="7">07:00 a.m.</option>
+                        <option value="8">08:00 a.m.</option>
+                        <option value="9">09:00 a.m.</option>
+                        <option value="10">10:00 a.m.</option>
+                        <option value="11">11:00 a.m.</option>
+                        <option value="12">12:00 p.m.</option>
+                        <option value="13">13:00 p.m.</option>
+                        <option value="14">14:00 p.m.</option>
+                        <option value="15">15:00 p.m.</option>
+                        <option value="16">16:00 p.m.</option>
+                        <option value="17">17:00 p.m.</option>
+                        <option value="18">18:00 p.m.</option>
+                        <option value="19">19:00 p.m.</option>
+                        <option value="20">20:00 p.m.</option>
+                        <option value="21">21:00 p.m.</option>
+                        <option value="22">22:00 p.m.</option>
+                        <option value="23">23:00 p.m.</option>
+                    </select>
+                    <span> - </span>
+                    <select id="end-time" name="end-time" required>
+                        <option value="" disabled selected>Choose End Time</option>
+                        <option value="0">00:00 a.m.</option>
+                        <option value="1">01:00 a.m.</option>
+                        <option value="2">02:00 a.m.</option>
+                        <option value="3">03:00 a.m.</option>
+                        <option value="4">04:00 a.m.</option>
+                        <option value="5">05:00 a.m.</option>
+                        <option value="6">06:00 a.m.</option>
+                        <option value="7">07:00 a.m.</option>
+                        <option value="8">08:00 a.m.</option>
+                        <option value="9">09:00 a.m.</option>
+                        <option value="10">10:00 a.m.</option>
+                        <option value="11">11:00 a.m.</option>
+                        <option value="12">12:00 p.m.</option>
+                        <option value="13">13:00 p.m.</option>
+                        <option value="14">14:00 p.m.</option>
+                        <option value="15">15:00 p.m.</option>
+                        <option value="16">16:00 p.m.</option>
+                        <option value="17">17:00 p.m.</option>
+                        <option value="18">18:00 p.m.</option>
+                        <option value="19">19:00 p.m.</option>
+                        <option value="20">20:00 p.m.</option>
+                        <option value="21">21:00 p.m.</option>
+                        <option value="22">22:00 p.m.</option>
+                        <option value="23">23:00 p.m.</option>
+                    </select>
+                    <label for="notes">Reservation Notes</label>
+                    <textarea id="notes" name="notes" rows="4" placeholder="Enter your notes..."></textarea>
+
+                    <label for="first-name">First Name*</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+
+                    <label for="last-name">Last Name*</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+                    
+                    <label for="Phone-Number">Phone Number*</label>
+                    <input type="number" id="Phone Number" name="Phone-number" placeholder="enter mobile number" required>
+
+                    <button type="submit">Submit a request</button>
+                </form>
+            </div>
+            <div id="image"></div>
+        </div>
+        <div id="needtoknow">
+            <h3>Need to Know</h3><br>
+            <p id="para1" class="paragraph"><pre id="paragraph">
+If you need to cancel, please call at least 24 hours beforehand. 
+If you don’t see any reservations available, please call 78798540859.
+
+Please note that we do have a $25 dessert fee for cakes or desserts brought into the restaurant. For parties of 6 or more, a 20% gratuity will be added to your final bill. 
+
+If you are running late, please call the restaurant at (248) 540-5900. We hold the table for a grace period of 15 minutes before offering the reservation to someone on 
+our waitlist.
+
+All patio reservations are weather permitting.</pre><br><br>
+                <h3>About lazeezEats</h3><br>
+                <p id="para2"><pre id="paragraph">
+Pho is so much more than a bowl of noodle soup. It’s an obsession - the soul of a nation. A delicious healthy dish that is eaten for breakfast, lunch and dinner 
+constantly tailored to suit the individual.
+
+Working at Pho is much the same. It’s more than a job, it’s a career. We take the work as seriously as the pho and we love it. We offer complete training programmes, 
+fantastic pay, bonus schemes, amazing staff parties, lots of pho and incredible opportunities for growth and progression, in the kitchen and on the floor.
+                    
+Whatever the role you are looking for, join the Pho family and become part of our national obsession and we'll tailor your career to suit you.
+                </pre></p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footerParts" id="footer1">
+                <div class="footercontainerParts" id="iam1">
+                    <div id="Careers" class="footerlinks"><a href="#">Careers</a></div>
+                    <div id="Faqs" class="footerlinks"><a href="#">Faqs</a></div>
+                    <div id="Franchise" class="footerlinks"><a href="#">Franchise</a></div>
+                    <div id="Privacy" class="footerlinks"><a href="#">Privacy</a></div>
+                    <div id="Gift Vouchers" class="footerlinks"><a href="#">Gift Vouchers</a></div>
+                </div>
+                <div class="footercontainerParts" id="iam2">
+                    <div class="iconsfooter"><a href="#"><i class="fa-brands fa-facebook-f" style="color: #000000;"></i></a></div>
+                    <div class="iconsfooter"><a href="#"><i class="fa-brands fa-instagram" style="color: #000000;"></i></a></div>
+                    <div class="iconsfooter"><a href="#"><i class="fa-brands fa-snapchat" style="color: #000000;"></i></a></div>
+                    <div class="iconsfooter"><a href="#"><i class="fa-brands fa-youtube" style="color: #000000;"></i></a></div>
+                    <div class="iconsfooter"><a href="#"><i class="fa-brands fa-twitter" style="color: #000000;"></i></a></div>
+
+                </div>
+        </div>
+        <div class="footerParts" id="footer2">
+            <div id="footer2container">
+                <div class="footer2parts"><i class="fa-regular fa-copyright" style="color: #ffffff;"></i>Copyright 2024</div>
+                <div class="footer2parts">Website by Anagh</div>
+            </div>
+            <div id="quote">
+                "Good food brings people together, but great food keeps them coming back."
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

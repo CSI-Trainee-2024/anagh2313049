@@ -147,7 +147,7 @@ input:focus {
     align-items: center;
 }
 footer{
-    margin-top: 10.5vh;
+    margin-top: 8vh;
 }
 .footerParts {
     width: 100%;
@@ -160,7 +160,7 @@ footer{
 #footer1 {
     display: flex;
     justify-content: space-between;
-    padding-top: 12.5vh;
+    padding-top: 8vh;
 }
 
 #iam1{

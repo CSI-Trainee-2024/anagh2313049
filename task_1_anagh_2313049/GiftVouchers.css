@@ -92,7 +92,6 @@ main {
     height: 150vh;
     display: flex;
     justify-content: center;
-    align-items: ;
 }
 
 #maincontainer {
@@ -163,7 +162,7 @@ main {
 #footer1 {
     display: flex;
     justify-content: space-between;
-    padding-top: 12.5vh;
+    padding-top: 8vh;
 }
 
 #iam1{

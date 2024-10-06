@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Online - LazeezEats</title>
+    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <header>
+        <div id="container1">
+            <div id="logophoto"><img src="lazeezEats.jpg" alt="logophoto" height="100%"></div>
+            <div id="Header1">
+                <div id="menu" class="firstHeader"><a href="menu.htm" class="firstHeadercontent border">Menu</a></div>
+                <div id="locations" class="firstHeader"><a href="locations.htm" class="firstHeadercontent border">Locations</a></div>
+                <div id="services" class="firstHeader"><a href="GiftVouchers.htm" class="firstHeadercontent border">Gift Vouchers</a></div>
+                <div id="ourStory" class="firstHeader"><a href="Our_story.htm" class="firstHeadercontent border">OUR STORY</a></div>
+            </div>
+            <div id="Header2">
+                <div id="part1">
+                    <div id="bookTable" class="header2icon"><a href="reservation.htm"><i class="fa-solid fa-bag-shopping"></i>Book a Table</a></div>
+                    <div id="OrderOnline" class="header2icon"><a href="order.htm"><i class="fa-solid fa-cart-shopping"></i>Order Online</a></div>
+                    <div id="ContactUs" class="header2icon"><a href="contact.htm"><i class="fa-solid fa-phone"></i>Contact Us</a></div>
+                </div>
+                <div id="emptyPart"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="order-container">
+            <div id="left-section">
+                <img src="pexels-photo-1581384.jpeg" alt="Delicious Food" id="hero-image">
+            </div>
+            <div id="right-section">
+                <h2>Order Most famous Dish</h2>
+                <p>Experience the best dining with our online ordering system. Select your favorites and enjoy them at home!</p>
+
+                <div class="menu-item">
+                    <img src="pizza.jpeg" alt="Dish 2" class="menu-image">
+                    <h3>Ceasar Salad</h3>
+                    <p>Crisp romaine lettuce with Caesar dressing and croutons.</p>
+                    <button class="order-button">Order Now</button>
+                </div>
+
+                <a href="menu.htm"><button class="explore-button">Explore Our Menu</button></a>
+            </div>
+        </div>
+
+        <div id="order-form-container">
+            <h2>Order Food</h2>
+            <form id="order-form">
+                <div class="form-group">
+                    <label for="dish-name">Dish Name:</label>
+                    <input type="text" id="dish-name" name="dish-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="special-requests">Special Requests:</label>
+                    <textarea id="special-requests" name="special-requests" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="contact-number">Contact Number:</label>
+                    <input type="tel" id="contact-number" name="contact-number" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="submit-button">Place Order</button>
+                </div>
+            </form>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="footerParts" id="footer1">
+                <div class="footercontainerParts" id="iam1">
+                    <div id="Careers" class="footerlinks"><a href="#">Careers</a></div>
+                    <div id="Faqs" class="footerlinks"><a href="#">Faqs</a></div>
+                    <div id="Franchise" class="footerlinks"><a href="#">Franchise</a></div>
+                    <div id="Privacy" class="footerlinks"><a href="#">Privacy</a></div>
+                    <div id="Gift Vouchers" class="footerlinks"><a href="GiftVouchers.htm">Gift Vouchers</a></div>
+                </div>
+                <div class="footercontainerParts" id="iam2">
+                    <div class="iconsfooter"><a href="#"><i class="fa-brands fa-facebook-f" style="color: #000000;"></i></a></div>
+                    <div class="iconsfooter"><a href="#"><i class="fa-brands fa-instagram" style="color: #000000;"></i></a></div>
+                    <div class="iconsfooter"><a href="#"><i class="fa-brands fa-snapchat" style="color: #000000;"></i></a></div>
+                    <div class="iconsfooter"><a href="#"><i class="fa-brands fa-youtube" style="color: #000000;"></i></a></div>
+                    <div class="iconsfooter"><a href="#"><i class="fa-brands fa-twitter" style="color: #000000;"></i></a></div>
+
+                </div>
+        </div>
+        <div class="footerParts" id="footer2">
+            <div id="footer2container">
+                <div class="footer2parts"><i class="fa-regular fa-copyright" style="color: #ffffff;"></i>Copyright 2024</div>
+                <div class="footer2parts">Website by Anagh</div>
+            </div>
+            <div id="quote">
+                "The most essential part of my day is a proper dinner."
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

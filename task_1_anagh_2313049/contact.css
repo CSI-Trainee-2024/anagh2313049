@@ -9,8 +9,7 @@ a {
   color: inherit;
 }
 body {
-  background-color: aliceblue;
-  /* background-image: url("Locations-Search-Background.webp"); */
+  background-image: url("contactback.webp");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -33,20 +32,20 @@ body {
 }
 
 #Header1 {
-    margin: 10vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 50vw;
+  margin: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50vw;
 }
 
 .firstHeader {
-    color: red;
-    font-size: 25px;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    /* font-weight: bolder; */
-    border: 2px solid transparent;
-    transition: transform 0.3s ease;
+  color: white;
+  font-size: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /* font-weight: bolder; */
+  border: 2px solid transparent;
+  transition: transform 0.3s ease;
 }
 .border:hover {
   border: 2px solid black;
@@ -87,107 +86,83 @@ body {
   transform: scale(1.2);
 }
 
-main{
-    height: 200vh;
-}
-
-#maincontainer {
+/* Main Contact Section */
+.contact-wrapper {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
-    margin-top: 2vh;
-}
-
-
-#form {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100%;
-    /* padding: 10px; */
-    width: 50vw;
-    margin-right: 5vw;
-}
-
-.reservation-form {
-    background-color: white;
-    padding: 20px;
+    margin: 5vh 10vw;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 500px;
+    overflow: hidden;
+}
+
+/* Left Side Image */
+.contact-image img {
+    width: 50vw;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    object-fit: cover;
 }
 
-.reservation-form h2 {
-    margin-bottom: 20px;
+/* Right Side Contact Form */
+.contact-form-container {
+    width: 50vw;
+    padding: 4vw;
+    background-color: #fff;
+}
+
+.contact-form h2 {
+    font-size: 32px;
     color: #333;
-    font-family: "Arial", sans-serif;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
 }
 
-label {
-    margin: 10px 0 5px;
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
     font-weight: bold;
-}
-
- select,
- input,
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
     font-size: 16px;
 }
- textarea {
-    resize: vertical;
-}
-button {
-    background-color: #4CAF50;
-    color: white;
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
     padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: #333;
+    outline: none;
+}
+
+.submit-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 16px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
     transition: background-color 0.3s ease;
-    transition: transform 0.3s ease;
+    width: 100%;
 }
 
-button:hover {
-    background-color: #45a049;
-    transform: scale(1.1);
+.submit-btn:hover {
+    background-color: #555;
 }
 
-#image {
-    background-image: url("image.jpeg");
-    background-size: cover;
-    height: 100vh;
-    width: 60vw;
-    /* transform: scale(1.5); */
-    /* margin-top: 10vh; */
-    padding-right: 3vw;
-    
-}
-
-
-#needtoknow {
-    margin-top: 5vh;
-    margin-left: 2.5vw;
-}
-
-#paragraph {
-    font-family: cursive;
-    /* color: white; */
-}
-
-.headingbelowform{
-    color: chocolate;
-}
 
 .footerParts {
     width: 100%;
@@ -251,3 +226,4 @@ button:hover {
     color:antiquewhite;
     font-size: 1.5em;
 }
+

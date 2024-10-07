@@ -82,7 +82,11 @@ body {
     background-color: red;
     transform: scale(1.2);
 }
-
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 #order-container {
     display: flex;
     justify-content: space-between;
@@ -91,7 +95,7 @@ body {
     margin: 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 #left-section {

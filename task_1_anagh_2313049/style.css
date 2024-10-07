@@ -28,6 +28,9 @@ body {
     height: 100%;
     width: 15vw;
 }
+#logoimage{
+    height: 100%;
+}
 
 #Header1 {
     margin: 10vh;
@@ -141,7 +144,9 @@ main{
     height: 20vh;
     border: 2px solid white;
 }
-
+footer{
+    bottom: 0;
+}
 #footer1 {
     display: flex;
     justify-content: space-between;
@@ -252,8 +257,10 @@ main{
         font-size: 1.5em; 
     }
     footer{
-        margin-top: 300px;
-        width: 100%;
+        margin-top: 60vh;
+        /* width: 100%; */
+        /* position:relative;
+        bottom: 0; */
     }
     #footer1 {
         flex-direction: row;

@@ -164,67 +164,70 @@ body {
 }
 
 
-.footerParts {
-    width: 100%;
-    background-color: #000000;
-    color: white;
-    height: 20vh;
-    border: 2px solid white;
-}
 
+.footerParts {
+  width: 100%;
+  background-color: #000000;
+  color: white;
+  height: 20vh;
+  border: 2px solid white;
+}
+footer{
+  bottom: 0;
+}
 #footer1 {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 8vh;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 8vh;
 }
 
 #iam1{
-    width: 50vw;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: 'Courier New', Courier, monospace;
+  width: 50vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Courier New', Courier, monospace;
 }
 #iam2{
-    width: 28vw;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  width: 28vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .iconsfooter {
-    height: 40px;
-    width: 40px;
-    background-color: white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 40px;
+  width: 40px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
 .iconsfooter:hover{
-    background-color: red;
+  background-color: red;
 }
 .footerlinks :hover {
-    color: red;
+  color: red;
 }
 
 #footer2container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 3vh;
-    padding-left: 1vw;
-    padding-right: 1vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 3vh;
+  padding-left: 1vw;
+  padding-right: 1vw;
 }
 #quote {
-    display: flex;
-    justify-content: center;
-    margin-top: 2vh;
-    font-family: cursive;
-    text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000, 2px 2px 8px rgba(0, 0, 0, 0.7);
-    color:antiquewhite;
-    font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  margin-top: 2vh;
+  font-family: cursive;
+  text-shadow: -1px 0 #000000, 0 1px #000000, 1px 0 #000000, 0 -1px #000000, 2px 2px 8px rgba(0, 0, 0, 0.7);
+  color:antiquewhite;
+  font-size: 1.5em;
 }
 
 @media (max-width: 768px) {

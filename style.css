@@ -162,7 +162,6 @@ main{
     height: 20vh;
     border: 2px solid white;
 }
-
 #footer1 {
     display: flex;
     justify-content: space-between;

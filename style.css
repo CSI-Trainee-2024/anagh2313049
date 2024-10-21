@@ -4,6 +4,7 @@
   box-sizing: border-box;
   text-decoration: none;
   scroll-behavior: smooth;
+  font-family: cursive;
   
 }
 a {
@@ -52,14 +53,22 @@ body {
 .firstHeader {
     color: white;
     font-size: 25px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    /* font-weight: bolder; */
+    font-weight:900;
     border: 2px solid transparent;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
+}
+.border{
+    transition: border-bottom 0.3s ease;
+    font-family:monospace;
 }
 .border:hover{
     border: 2px solid black;
-    color: cyan;
+    /* border-radius: 1vh; */
+    color: #5B2C6F;
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    
+
 }
 
 
